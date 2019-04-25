@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		38E67F11226F48130023CE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F10226F48130023CE7A /* AppDelegate.swift */; };
-		38E67F13226F48130023CE7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F12226F48130023CE7A /* ViewController.swift */; };
 		38E67F16226F48130023CE7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E67F14226F48130023CE7A /* Main.storyboard */; };
 		38E67F18226F48150023CE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E67F17226F48150023CE7A /* Assets.xcassets */; };
 		38E67F1B226F48150023CE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E67F19226F48150023CE7A /* LaunchScreen.storyboard */; };
+		38E67F23226F4AC80023CE7A /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F22226F4AC80023CE7A /* PlacesTableViewController.swift */; };
+		38E67F25226F4AF60023CE7A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F24226F4AF60023CE7A /* MapViewController.swift */; };
+		38E67F2B226F4D820023CE7A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F2A226F4D820023CE7A /* Place.swift */; };
+		38E67F2E226F4E140023CE7A /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E67F2D226F4E140023CE7A /* PlaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38E67F0D226F48130023CE7A /* Places - Key.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Places - Key.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E67F10226F48130023CE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38E67F12226F48130023CE7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38E67F15226F48130023CE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38E67F17226F48150023CE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E67F1A226F48150023CE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38E67F1C226F48150023CE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E67F22226F4AC80023CE7A /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		38E67F24226F4AF60023CE7A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		38E67F2A226F4D820023CE7A /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		38E67F2D226F4E140023CE7A /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		38E67F0F226F48130023CE7A /* Places - Key */ = {
 			isa = PBXGroup;
 			children = (
-				38E67F10226F48130023CE7A /* AppDelegate.swift */,
-				38E67F12226F48130023CE7A /* ViewController.swift */,
-				38E67F14226F48130023CE7A /* Main.storyboard */,
-				38E67F17226F48150023CE7A /* Assets.xcassets */,
-				38E67F19226F48150023CE7A /* LaunchScreen.storyboard */,
-				38E67F1C226F48150023CE7A /* Info.plist */,
+				38E67F2F226F4E1A0023CE7A /* Model Controllers */,
+				38E67F2C226F4D8D0023CE7A /* Model */,
+				38E67F27226F4B280023CE7A /* View Controllers */,
+				38E67F28226F4B3D0023CE7A /* Storyboards */,
+				38E67F29226F4B530023CE7A /* Resources */,
 			);
 			path = "Places - Key";
+			sourceTree = "<group>";
+		};
+		38E67F27226F4B280023CE7A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38E67F24226F4AF60023CE7A /* MapViewController.swift */,
+				38E67F22226F4AC80023CE7A /* PlacesTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		38E67F28226F4B3D0023CE7A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				38E67F14226F48130023CE7A /* Main.storyboard */,
+				38E67F19226F48150023CE7A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		38E67F29226F4B530023CE7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				38E67F10226F48130023CE7A /* AppDelegate.swift */,
+				38E67F17226F48150023CE7A /* Assets.xcassets */,
+				38E67F1C226F48150023CE7A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		38E67F2C226F4D8D0023CE7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E67F2A226F4D820023CE7A /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		38E67F2F226F4E1A0023CE7A /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38E67F2D226F4E140023CE7A /* PlaceController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E67F13226F48130023CE7A /* ViewController.swift in Sources */,
+				38E67F2E226F4E140023CE7A /* PlaceController.swift in Sources */,
 				38E67F11226F48130023CE7A /* AppDelegate.swift in Sources */,
+				38E67F25226F4AF60023CE7A /* MapViewController.swift in Sources */,
+				38E67F23226F4AC80023CE7A /* PlacesTableViewController.swift in Sources */,
+				38E67F2B226F4D820023CE7A /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Places - Key/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Places - Key/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Places - Key/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Places - Key/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
